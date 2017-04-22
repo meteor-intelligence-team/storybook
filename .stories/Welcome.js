@@ -1,6 +1,11 @@
 import React from 'react';
 import { List, Segment, Header, Container } from 'semantic-ui-react'
-import { linkTo } from '@kadira/storybook';
+import { storiesOf, action, linkTo } from '@kadira/storybook';
+
+storiesOf('Welcome', module)
+.add('', () => (
+  <Welcome/>
+));
 
 const styles = {
   code: {
